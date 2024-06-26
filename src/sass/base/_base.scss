@@ -5,8 +5,8 @@
   //スマホファースト
   html {
     //~375px
-    @media (max-width: 375px) {
-      font-size: vw(375, 16);
+    @media (max-width: 390px) {
+      font-size: vw(390, 16);
     }
 
     //375px~767px
@@ -35,8 +35,8 @@
     }
 
     //~375px
-    @media (max-width: 375px) {
-      font-size: vw(375, 16);
+    @media (max-width: 390px) {
+      font-size: vw(390, 16);
     }
   }
 }
