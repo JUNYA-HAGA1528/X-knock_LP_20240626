@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #d45d79; /* 質問の色 */
+    font-weight: bold;
+}
+
+.faq-question::before {
+    content: "Q.";
+    margin-right: 5px;
+    color: #d45d79;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #333;
+}
+
+.faq-icon {
+    color: #d45d79; /* アイコンの色 */
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.faq-icon.open {
+    transform: rotate(45deg);
+}
