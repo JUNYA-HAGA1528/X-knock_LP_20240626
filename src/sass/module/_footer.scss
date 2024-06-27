@@ -105,7 +105,11 @@
     }
 }
 
-.campaign__button{
+
+
+
+//ボタンの設定
+.footer__button{
     margin-top: rem(40);
     margin-left: auto;
     @include mq(md){
@@ -113,9 +117,7 @@
     }
 }
 
-
-//ボタンの設定
-.campaign__button-text{
+.footer__button-text{
     position: relative;
     background: $grade-third;
     border: rem(1) solid transparent; // グラデーションを使用する場合、ボーダーを透明に
@@ -137,12 +139,12 @@
     }
 }
 
-.campaign__button-text span {
+.footer__button-text span {
 	padding-right: rem(32);
 	position: relative;
 }
 
-.campaign__button-text span::after {
+.footer__button-text span::after {
 	background-image: url(../images/common/footer-botton-logo.png);
 	background-position: center;
 	background-repeat: no-repeat;

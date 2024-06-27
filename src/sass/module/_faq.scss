@@ -38,3 +38,70 @@
 .faq__item + .faq__item{
     margin-top: rem(8);
 }
+
+
+
+
+
+//ボタンの設定
+.footer__button{
+    margin-top: rem(40);
+    margin-left: auto;
+    @include mq(md){
+        margin-top: rem(73);
+    }
+}
+
+.footer__button-text{
+    position: relative;
+    background: $grade-third;
+    border: rem(1) solid transparent; // グラデーションを使用する場合、ボーダーを透明に
+	color: $white;
+	display: inline-block;
+    padding: rem(3.5) 0;
+    width: rem(242);
+	font-size: rem(16);
+	font-weight: normal;
+	text-align: center;
+	transition: color 0.2s;
+	z-index: 1;
+    border-radius: rem(4);
+    cursor: pointer;
+    @include mq(md){
+        font-size: rem(24);
+        width: rem(369);
+        padding: rem(11) 0;
+    }
+}
+
+.footer__button-text span {
+	padding-right: rem(32);
+	position: relative;
+}
+
+.footer__button-text span::after {
+	background-image: url(../images/common/footer-botton-logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 46%;
+    right: 0;
+    width: rem(13);
+	height: rem(13);
+	transform: translateY(-50%);
+	transition: 0.2s background-color;
+    @include mq(md){
+        width: rem(21.75);
+        height: rem(21.75);
+    }
+}
+
+
+
+a:hover {
+    @include mq(md){
+        opacity: 0.5;
+    }
+}
