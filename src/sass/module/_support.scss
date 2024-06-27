@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.support__inner {
+    max-width: $max-width;
+    margin: auto;
+    padding: rem(35); 
+    @include mq(md){
+        max-width: rem(1300); 
+        padding: rem(30); 
+
+    }
+}
+
+.support__list {
+    margin-top: rem(40); 
+    @include mq(md){
+        margin-top: rem(103);
+    }
+}
