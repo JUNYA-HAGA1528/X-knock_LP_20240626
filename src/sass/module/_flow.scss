@@ -1,2 +1,107 @@
 @use "global" as *;
 
+
+.flow__inner{
+    max-width: rem(1460);
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        padding: 0 rem(30);
+    }
+}
+
+.flow__title{
+    font-size: rem(24);
+    color: red;
+    text-align: center;
+    @include mq(md){
+        font-size: rem(48);
+    }
+}
+
+.flow__list{
+    background-image: url(../images/common/flow-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: rem(39);
+    padding: rem(30) rem(30) rem(30) rem(17);
+    @include mq(md){
+        margin-top: rem(50);
+        padding: rem(150) rem(120);
+    }
+}
+
+.flow__item{
+    display: flex;
+    position: relative;
+}
+
+.flow__item + .flow__item{
+    margin-top: rem(24);
+}
+
+.flow__step{
+    font-size: rem(16);
+    color: $gray;
+    margin-top: rem(19.2);
+    @include mq(md){
+        font-size: rem(30);
+        margin-top: rem(35);
+    }
+}
+
+.reason-card__number{
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    left: rem(45);
+    width: rem(40);
+    height: rem(40);
+    background: #666666;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    margin-top: rem(10);
+    padding-top: rem(8);
+    border-radius: 50%;
+    @include mq(md){
+        left: rem(82);
+        width: rem(100);
+        height: rem(100);
+        padding-top: rem(10);
+        font-size: rem(48);
+    }
+}
+
+.flow__textbox{
+    width: 100%;
+    background-color: $white;
+    margin-left: rem(26);
+    padding: rem(18) rem(10) rem(20) rem(10);
+    border: solid 1px $gray ;
+    @include mq(md){
+        margin-left: rem(58);
+        padding: rem(18) rem(70) rem(18) rem(173);
+    }
+}
+
+.flow__textbox-title{
+    font-size: rem(16);
+    color: red;
+    margin-left: rem(20);
+    @include mq(md){
+        font-size: rem(32);
+        margin-left: 0;
+    }
+}
+
+.flow__textbox-text{
+    margin-top: rem(12);
+    font-size: rem(14);
+    line-height: 2;
+    @include mq(md){
+        margin-top: rem(20);
+        font-size: rem(20);
+    }
+}
