@@ -23,42 +23,182 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/script.js"></script>
+
+    <!-- Adobeフォント -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'mhe5whk',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
 
+
+    
 
 
     <!----------
     faq
     ---------->
-    <div class="top-faq faq fish-logo">
+    <div class="top-faq faq">
         <div class="faq__inner">
+
+            <h2 class="faq__title">よくあるご質問</h2>
+
             <ul class="faq__items">
                 <!-- ループ -->
                 <li class="faq__item accordion">
-                    <div class="accordion js-accordion">
-                        <div class="accordion__title">
-                            <p><span class="accordion__top">Q.</span>ここに質問が入ります。ここに質問が入ります。ここに質問が入ります。</p>
-                            <p class="accordion__icon">
-                                <span></span>
-                                <span></span>
-                            </p>
+                    <div class="accordion__content js-accordion">
+                        <div class="accordion__wrapper">
+                            <div class="accordion__title">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top">Q.&nbsp;</span>
+                                    <p class="accordion__question">
+                                        物件を所有している場合でも新たに物件を借りないといけないですか？
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__text">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top accordion__top--margin">A.&nbsp;</span>
+                                    <p class="accordion__answer">
+                                        いいえ、既存で持たれているスペースでも十分可能です。他の美容サロンをされている方々や他事業でスペースを使われている方々も開業されています。
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="accordion__text">
-                            <span class="accordion__top">A.</span>ここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入りますここに質問の答えが入ります
+                        <p class="accordion__icon">
+                            <span></span>
+                            <span></span>
                         </p>
                     </div>
                 </li>
+
+                <li class="faq__item accordion">
+                    <div class="accordion__content js-accordion">
+                        <div class="accordion__wrapper">
+                            <div class="accordion__title">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top">Q.&nbsp;</span>
+                                    <p class="accordion__question">
+                                        店舗のエリアが被ったらどうなりますか？
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__text">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top accordion__top--margin">A.&nbsp;</span>
+                                    <p class="accordion__answer">
+                                        原則最寄駅が被る場合は、先に出店されている加盟店のオーナー様の承諾があってからの出店となります。人気エリアは埋まりやすいのでお早めのお申込をお願いします。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="accordion__icon">
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faq__item accordion">
+                    <div class="accordion__content js-accordion">
+                        <div class="accordion__wrapper">
+                            <div class="accordion__title">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top">Q.&nbsp;</span>
+                                    <p class="accordion__question">
+                                        集客はどのようにしますか？
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__text">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top accordion__top--margin">A.&nbsp;</span>
+                                    <p class="accordion__answer">
+                                        特に限定するわけではないのでいかなる集客手段を使っていただいても構いません。<br>弊社では、お客様からの口コミに特化させた集客方法のマニュアルを完備しておりますので、別途無駄な広告費を使わなくても集客できる体制は整っております。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="accordion__icon">
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faq__item accordion">
+                    <div class="accordion__content js-accordion">
+                        <div class="accordion__wrapper">
+                            <div class="accordion__title">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top">Q.&nbsp;</span>
+                                    <p class="accordion__question">
+                                        売上に対するパーセンテージのロイヤリティなどはありますか？
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__text">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top accordion__top--margin">A.&nbsp;</span>
+                                    <p class="accordion__answer">
+                                        いいえ、ございません。売上が上がるとロイヤリティが上がるなどという制度ではなく、毎月固定で機材1台導入で55,000円、追加1台毎に33,000円（税込）というロイヤリティになります。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="accordion__icon">
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faq__item accordion">
+                    <div class="accordion__content js-accordion">
+                        <div class="accordion__wrapper">
+                            <div class="accordion__title">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top">Q.&nbsp;</span>
+                                    <p class="accordion__question">
+                                        契約期間はどれくらいですか？
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__text">
+                                <div class="accordion__flex">
+                                    <span class="accordion__top accordion__top--margin">A.&nbsp;</span>
+                                    <p class="accordion__answer">
+                                        FCの契約は原則2年で自動延長制です。<br>3ヶ月前申告で契約を終了することができます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="accordion__icon">
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
 
 
 
+    
+
     <!----------
     footer
     ---------->
-    <header class="footer">
+    <header class="top-footer footer">
         <div class="footer__inner">
             <div class="footer__line">
                 <h1 class="footer__logo">

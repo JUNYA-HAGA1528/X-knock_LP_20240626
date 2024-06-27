@@ -2,7 +2,7 @@
 
 .footer{
     padding: rem(40) 0;
-    background-color: #fffacd;
+    background: $grade-second;
     font-size: rem(16);
     letter-spacing: 0.05em;
     @include mq(md){
@@ -79,6 +79,7 @@
 
 .footer__text {
 	display: block;
+    color: $gray;
 }
 
 .footer__bottom{
@@ -91,6 +92,7 @@
 
 .footer__company{
     padding-left: rem(5);
+    color: $gray;
     @include mq(md){
         padding: 0;
     }
@@ -115,8 +117,8 @@
 //ボタンの設定
 .campaign__button-text{
     position: relative;
-	background-color: red;
-	border: rem(1) solid red;
+    background: $grade-third;
+    border: rem(1) solid transparent; // グラデーションを使用する場合、ボーダーを透明に
 	color: $white;
 	display: inline-block;
     padding: rem(3.5) 0;

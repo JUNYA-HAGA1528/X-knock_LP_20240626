@@ -1,92 +1,40 @@
 @use "global" as *;
 
-.accordion__top {
-    color: red;
-    font-size: 1.875rem; /* rem(30)の代わりに使う */
+.faq__title{
+    font-size: rem(24);
+    font-weight: $medium;
+    text-align: center;
+    color: $gray;
+    @include mq(md){
+        font-size: rem(36);
+    }
 }
 
-.accordion p {
-    border: 1px solid #8fbc8f;
-    margin-bottom: -1px;
+.faq__inner{
+    max-width: rem(1220);
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        padding: 0 rem(30);
+    }
 }
 
-.accordion__title {
-    position: relative;
-    padding: 1rem; /* rem(16)の代わりに使う */
-    background: #8fbc8f;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 1;
-    font-size: 1rem; /* rem(16)の代わりに使う */
+.faq__items{
+    border: solid 1px $gray;
+    border-radius: rem(16);
+    margin-top: rem(40);
+    padding: rem(24) 0 ;
+    @include mq(md){
+        margin-top: rem(48);
+        padding: rem(55) 0 ;
+    }
 }
 
-.accordion__icon,
-.accordion__icon span {
-    display: inline-block;
-    transition: all 0.4s;
-    box-sizing: border-box;
+.faq__item{
+    max-width: rem(902);
+    margin: auto;
 }
 
-.accordion__icon {
-    position: relative;
-    height: 1px;
-    max-width: 1.875rem; /* rem(30)の代わりに使う */
-    width: 100%;
-    margin-left: 0.75rem; /* rem(12)の代わりに使う */
-}
-
-.accordion__icon span {
-    background-color: white;
-    border-radius: 0.1875rem;
-    display: inline-block;
-    height: 1px;
-    left: 0;
-    position: absolute;
-    transition: all 0.4s;
-    width: 100%;
-}
-
-.accordion__icon span:nth-of-type(1) {
-    top: -1px;
-    transform: rotate(0deg);
-    visibility: visible;
-    opacity: 1;
-}
-
-.accordion__icon span:nth-of-type(2) {
-    top: -1px;
-    transform: rotate(90deg);
-}
-
-.accordion__text {
-    height: 0;
-    visibility: hidden;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.4s;
-}
-
-.open .accordion__text {
-    padding: 1rem; /* rem(16)の代わりに使う */
-}
-
-.open .accordion__text {
-    padding: 1.375rem 1rem; /* rem(22) rem(16)の代わりに使う */
-    line-height: 1.45;
-    height: auto;
-    visibility: visible;
-    opacity: 1;
-}
-
-.open .accordion__icon span:nth-of-type(1) {
-    visibility: hidden;
-    overflow: hidden;
-    opacity: 0;
-}
-
-.open .accordion__icon span:nth-of-type(2) {
-    transform: rotate(180deg);
+.faq__item + .faq__item{
+    margin-top: rem(8);
 }

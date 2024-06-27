@@ -2,7 +2,7 @@
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1400px;
+$inner: 1100px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
@@ -13,7 +13,7 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
+$base-font-family:"a-otf-ud-shin-go-pr6n", sans-serif;
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -24,12 +24,32 @@ body {
 // フォントウェイト
 $regular: 300;
 $normal: 400;
+$medium: 500;
 $bold: 700;
+$black: 900;
 
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #000;
 $white: #fff;
+$gray: #666666;
+
+$grade-first:linear-gradient(
+  to bottom, /* 上から下へのグラデーション */
+  #EFEEEA 0%, /* 最初の色（上） */
+  #BFCFDB 49%, /* 中間の色 */
+  #E4E7E7 100% /* 最後の色（下） */
+);
+
+$grade-second: linear-gradient(to right, 
+#EFEEEA 0%, 
+#DBD5BF 49%, 
+#E7E7E4 100%
+);
+
+$grade-third:linear-gradient(to right, #FD4477 0%, #F381A0 100%);
+
+$grade-four:linear-gradient(180deg, #8D99D9 0%, #8BA0C7 100%);
