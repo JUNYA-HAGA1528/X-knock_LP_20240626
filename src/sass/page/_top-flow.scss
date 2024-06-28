@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-flow{
-    margin-top: rem(78);
+    margin-top: rem(100);
     @include mq(md){
         margin-top: rem(160);
     }

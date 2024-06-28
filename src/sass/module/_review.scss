@@ -1,0 +1,181 @@
+@use "global" as *;
+
+.review__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1420);
+    }
+}
+
+.review__head {
+    position: relative;
+}
+
+.review__title {
+    position: absolute;
+    top: 11.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: $medium;
+    text-align: center;
+    font-size: rem(24);
+    color: $white;
+    background-color: $gray;
+    width: rem(260);
+    padding: rem(7) 0;
+    margin: auto;
+    @include mq(md) {
+        top:52%;
+        font-size: rem(48);
+        width: rem(797);
+    }
+}
+
+.review__wrapper{
+   
+    width: 72%;
+    margin: auto;
+    @include mq(md){
+        display: flex;
+        width: 100%;
+        max-width: rem(1001);
+    }
+}
+
+.review__img{
+    @include mq(md){
+        width: 34.7%;
+    }
+}
+
+
+.review__textbox{
+    @include mq(md){
+        background-image: url(../images/common/review__text.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: rem(11) rem(20) rem(22);
+        width: 65.2694%;
+        text-align: center;
+    }
+}
+
+.review__owner{
+    color: #B9A36B;
+    font-size: rem(20);
+    font-weight: $medium;
+    background-color: $white;
+    border: solid 1px #B9A36B ;
+    text-align: center;
+    margin-top: rem(20);
+    @include mq(md){
+        font-size: rem(36);
+        margin-top: 0;
+    }
+}
+
+.review__comment{
+    color: #B9A36B;
+    font-size: rem(16);
+    font-weight: $medium;
+    text-align: left;
+    margin-top: rem(16);
+    line-height: 2;
+    @include mq(md){
+        font-weight: $bold;
+        padding: 0 rem(50);
+        font-size: rem(32);
+        margin-top: rem(20);
+    }
+}
+
+.review__text{
+    font-size: rem(14);
+    text-align: left;
+    line-height: 2.1;
+    text-align: justify;
+    margin-top: rem(10);
+    letter-spacing: 0.05em;
+    color: $gray;
+    @include mq(md){
+        line-height: 1.7;
+        padding: 0 rem(17);
+        font-size: rem(16);
+        margin-top: rem(16);
+    }
+}
+
+
+.review__under{
+    @include mq(md){
+        margin-top: rem(-88);
+    }
+}
+
+
+
+
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+    width: rem(100);
+    height: rem(100);
+    top: var(--swiper-navigation-top-offset,45%);
+}
+@media screen and (max-width: 1200px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: rem(50);
+        height: rem(50);
+    }
+}
+@media screen and (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: rem(30);
+        height: rem(30);
+    }
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  width: rem(100);
+  height: rem(100);
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        width: rem(50);
+        height: rem(50);
+    }
+}
+@media screen and (max-width: 768px) {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        width: rem(30);
+        height: rem(30);
+    }
+}
+
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../images/common/review-botton-left.png);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../images/common/review-botton-right.png);
+}
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
