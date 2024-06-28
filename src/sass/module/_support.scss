@@ -3,10 +3,10 @@
 .support__inner {
     max-width: $max-width;
     margin: auto;
-    padding: rem(35); 
+    padding:0 rem(35); 
     @include mq(md){
         max-width: rem(1300); 
-        padding: rem(30); 
+        padding:0 rem(30); 
 
     }
 }
