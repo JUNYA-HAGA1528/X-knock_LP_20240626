@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.whitening__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding:  0 rem(35);
+    @include mq(md){
+        max-width: rem(1217);
+        padding:  0 rem(30); 
+    }
+}
+
