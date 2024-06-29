@@ -10,3 +10,10 @@
     }
 }
 
+
+.whitening__head{
+    margin-top: rem(76);
+    @include mq(md){
+        margin-top: 0;
+    }
+}

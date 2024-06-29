@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.franchise{
+    @include mq(md){
+        background-image: url(../images/common/franchise-logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: rem(50) 0 rem(170); 
+        width: 100%;
+        margin-top: rem(-20);
+    }
+}
+
+.franchise__img img{
+    aspect-ratio: 392/301;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

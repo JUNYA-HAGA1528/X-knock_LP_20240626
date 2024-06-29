@@ -1,0 +1,93 @@
+@use "global" as *;
+
+.contract {
+    text-align: center;
+    background: $grade-second;
+    padding: rem(33) 0 rem(45);
+}
+
+.contract__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(30);
+    @include mq(md){
+        max-width: rem(732);
+    }
+}
+
+.contract__title{
+    font-size: rem(24);
+    color: red;
+    @include mq(md){
+        font-size: rem(36);
+    }
+}
+
+.contract__detail{
+    margin-top: rem(40);
+}
+
+.contract__content{
+    font-size: rem(14);
+    line-height: calc(24/14);
+    @include mq(md){
+        font-size: rem(16);
+        line-height: calc(24/16);
+        display: flex;
+        align-items: center;
+        gap: rem(20) rem(32);
+    }
+}
+
+.contract__content + .contract__content{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(28.4);
+    }
+}
+
+.contract__dt{
+    display: inline-block;
+    background: $grade-third;
+    color: $white;
+    font-weight: $medium;
+    font-size: rem(16);
+    padding: rem(1.5) 0;
+    width: 48.5%;
+    @include mq(md){
+        padding: 0;
+        font-size: rem(32);
+        width: 31.2%;
+    }
+}
+
+.contract__dd{
+    font-size: rem(20);
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    text-align: center;
+    background-color: $white;
+    padding: rem(5) 0 ;
+    color: red;
+    width: 79%;
+    margin:rem(20) auto auto auto;
+    @include mq(md){
+        text-align: left;
+        margin:0;
+        padding: 0 rem(10) 0 rem(54);
+        font-size: rem(32);
+        width: 62.8%;
+    }
+}
+
+.contract__dd span{
+    color: #EF2622;
+}
+
+.contract__button {
+    margin-top: rem(25);
+    text-align: center;
+    @include mq(md){
+        margin-top: rem(54);
+    }
+}
