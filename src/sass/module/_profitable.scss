@@ -1,0 +1,168 @@
+@use "global" as *;
+
+
+.profitable{
+    background-color: #F2BECC;
+}
+
+.profitable__inner{
+    max-width: rem(1360);
+    margin: auto;
+    padding: 0 rem(10);
+    @include mq(md){
+        padding: 0 4.4% 0 rem(10);
+    }
+}
+
+.profitable__inner-two{
+    max-width: rem(1290);
+    margin: auto;
+    padding: 0 rem(10);
+    @include mq(md){
+        padding: 0 4.4% 0 rem(10);
+    }
+}
+
+.profitable__first{
+    margin-top: rem(120);
+    display: flex;
+    align-items: flex-end;
+}
+
+.profitable__first-img{
+    width: 42.8%;
+    display: block;
+}
+
+.profitable__first-img img {
+    aspect-ratio: 543/696;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aaa{
+    width: 57%;
+}
+
+.profitable__first-wrapper{
+    margin-top: rem(21);
+}
+
+.profitable__first-title{
+margin-left: rem(-50);
+}
+
+.profitable__first-number{
+    padding-left: rem(75);
+    font-size: rem(20);
+}
+
+.profitable__first-number--padding{
+    padding-top: rem(15);
+}
+
+.profitable__first-text{
+    margin-top: rem(60);
+    padding-bottom: rem(30);
+}
+
+.profitable__first-text-one{
+    font-size: rem(32);
+    color: $white;
+}
+
+.profitable__first-text-two{
+    font-size: rem(14);
+}
+
+.profitable__first-white{
+    font-size: rem(32);
+    color: $white;
+}
+
+.profitable__first-text-one,
+.profitable__first-text-two{
+    padding-left: rem(40);
+}
+
+.profitable__first-text-two{
+    margin-top: rem(20);
+}
+
+.profitable__first-font{
+    font-size: rem(18);
+    color: $gray;
+}
+
+
+
+
+
+//profitable__second
+.profitable__second{
+    margin-top: rem(38);
+}
+
+.profitable__second__img{
+    width: 76.7%;
+    display: flex;
+    margin-left: auto;
+
+}
+
+.profitable__second__img img {
+    aspect-ratio: 920/594;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+//third
+.profitable__third{
+    @include mq(md){
+        display: flex;
+        gap: 0 rem(30);
+        margin-top: rem(30);
+    }
+}
+
+.profitable__third-img-one{
+    width: 69.1%;
+}
+
+.profitable__third-img-one img {
+    aspect-ratio: 829/457;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profitable__third-img-two{
+    width: 28.5%;
+}
+
+.profitable__third-img-two img {
+    aspect-ratio: 341/457;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+//force
+.profitable__force{
+    margin-top: rem(30);
+}
+
+.profitable__force-img{
+    width: 100%;
+}
+
+.profitable__force-img{
+    aspect-ratio:1200/495 ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
