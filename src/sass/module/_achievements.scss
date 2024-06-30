@@ -46,7 +46,6 @@
 .achievements__inner{
     max-width: $max-width;
     margin:auto;
-    padding: 0 0 rem(65) 0;
     @include mq(md){
         max-width: rem(1420);
         padding: rem(34) 0;
@@ -55,7 +54,7 @@
 
 .achievements__border{
     width: 100%;
-    height: rem(35);
+    height: rem(45);
     margin: auto;
     @include mq(md){
         width: rem(1080);
@@ -148,7 +147,12 @@
     }
 }
 
-
+.achievements__detail{
+    padding-bottom: rem(70);
+    @include mq(md){
+        padding-bottom: 0;
+    }
+}
 
 
 

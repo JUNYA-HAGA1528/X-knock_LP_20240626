@@ -1,5 +1,8 @@
 @use "global" as *;
 
 .top-profitable{
-    margin-top: rem(200);
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(200);
+    }
 }

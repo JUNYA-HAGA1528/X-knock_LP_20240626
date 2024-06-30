@@ -1,75 +1,203 @@
 @use "global" as *;
 
-
-.profitable{
-    background-color: #F2BECC;
+.profitable-logo{
+	position: relative;
 }
 
+.profitable-logo::before {
+    background-image: url(../images/common/profitable__first-ecxia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(450);
+    left: calc(50% - min(50%, rem(580)));
+    width: rem(153);
+    height: rem(745);
+    z-index: 100;
+}
+@media screen and (max-width: 1200px) {
+    .profitable-logo::before {
+        top: rem(400);
+        left: calc(50% - min(50%, rem(500)));
+    }
+}
+
+
+.profitable{
+    position: relative;
+}
+
+.profitable::before {
+    content: "";
+    position: absolute;
+    top: rem(80);
+    left: 0;
+    width: 90.4%;
+    height: 100%;    
+    background-color: #F2BECC; 
+    z-index: -1; 
+    border-radius: 0 rem(150) 0 0; /* 上部右側の角のみを丸くする */
+}
+@media screen and (max-width: 1550px) {
+    .profitable::before {
+        width: 97%;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .profitable::before {
+        width: 99%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .profitable::before {
+        top: rem(40);
+    }
+}
+@media screen and (max-width: 768px) {
+    .profitable::before {
+        width: 91%;
+        border-radius: 0 rem(30) 0 0;
+    }
+}
+
+
 .profitable__inner{
-    max-width: rem(1360);
+    max-width: $max-width;
     margin: auto;
-    padding: 0 rem(10);
+    padding: 0 rem(65) 0 rem(25);
     @include mq(md){
+        max-width: rem(1360);
         padding: 0 4.4% 0 rem(10);
     }
 }
 
 .profitable__inner-two{
-    max-width: rem(1290);
+    max-width: $max-width;
     margin: auto;
-    padding: 0 rem(10);
+    padding: 0 rem(65) 0 rem(35);
     @include mq(md){
+        max-width: rem(1290);
         padding: 0 4.4% 0 rem(10);
     }
 }
 
 .profitable__first{
-    margin-top: rem(120);
-    display: flex;
-    align-items: flex-end;
+    @include mq(md){
+        margin-top: rem(120);
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .profitable__first-img{
-    width: 42.8%;
+    width: 70%;
     display: block;
+    @include mq(md){
+        width: 42.8%;
+    }
 }
 
 .profitable__first-img img {
-    aspect-ratio: 543/696;
+    aspect-ratio: 248/319;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 543/696;
+    }
+}
+
+.profitable__first-content{
+    width: 100%;
+    @include mq(md){
+        width: 57%;
+    }
+}
+
+
+.profitable__first-wrapper{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(21);
+    }
+}
+
+.profitable__first-wrapper-flex{
+    display: flex;
+    gap: 0 rem(30);
+    justify-content: center;
+    @include mq(md){
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.profitable__first-wrapper-img{
+    width: rem(56);
+    height: rem(267);
+    margin-top: rem(-80);
 }
 
 .aaa{
-    width: 57%;
-}
-
-.profitable__first-wrapper{
-    margin-top: rem(21);
+    width: 60%;
+    @include mq(md){
+        width: 100%;
+    }
 }
 
 .profitable__first-title{
-margin-left: rem(-50);
+    margin-top: rem(-100);
+    margin-left: rem(50);
+    width: 79.7%;
+    @include mq(md){
+        margin-top: rem(0);
+        margin-left: rem(-50);
+        width: 100%;
+    }
 }
 
+.profitable__first-title img {
+    aspect-ratio: 263/45;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 763/147;  
+    }
+}
+
+
 .profitable__first-number{
-    padding-left: rem(75);
-    font-size: rem(20);
+    font-size: rem(16);
+    @include mq(md){
+        font-size: rem(20);
+        padding-left: rem(85);
+    }
 }
 
 .profitable__first-number--padding{
-    padding-top: rem(15);
+    padding-top: rem(0);
+    @include mq(md){
+        padding-top: rem(12);
+    }
 }
 
 .profitable__first-text{
-    margin-top: rem(60);
-    padding-bottom: rem(30);
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(60);
+        padding-bottom: rem(30);
+    }
 }
 
 .profitable__first-text-one{
-    font-size: rem(32);
+    font-size: rem(24);
     color: $white;
+    @include mq(md){
+        font-size: rem(32);
+    }
 }
 
 .profitable__first-text-two{
@@ -77,13 +205,19 @@ margin-left: rem(-50);
 }
 
 .profitable__first-white{
-    font-size: rem(32);
+    font-size: rem(16);
     color: $white;
+    @include mq(md){
+        font-size: rem(32);
+    }
 }
 
 .profitable__first-text-one,
 .profitable__first-text-two{
-    padding-left: rem(40);
+    padding-left: rem(10);
+    @include mq(md){
+        padding-left: rem(40);
+    }
 }
 
 .profitable__first-text-two{
@@ -91,8 +225,11 @@ margin-left: rem(-50);
 }
 
 .profitable__first-font{
-    font-size: rem(18);
+    font-size: rem(16);
     color: $gray;
+    @include mq(md){
+        font-size: rem(18);
+    }
 }
 
 
@@ -101,26 +238,35 @@ margin-left: rem(-50);
 
 //profitable__second
 .profitable__second{
-    margin-top: rem(38);
+    margin-top: rem(19);
+    @include mq(md){
+        margin-top: rem(38);
+    }
 }
 
 .profitable__second__img{
-    width: 76.7%;
-    display: flex;
-    margin-left: auto;
-
+    width: 100%;
+    @include mq(md){
+        width: 76.7%;
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .profitable__second__img img {
-    aspect-ratio: 920/594;
+    aspect-ratio: 290/187;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 920/594;
+    }
 }
 
 
 //third
 .profitable__third{
+    margin-top: rem(19);
     @include mq(md){
         display: flex;
         gap: 0 rem(30);
@@ -129,31 +275,47 @@ margin-left: rem(-50);
 }
 
 .profitable__third-img-one{
-    width: 69.1%;
+    width: 100%;
+    @include mq(md){
+        width: 69.1%;
+    }
 }
 
+
 .profitable__third-img-one img {
-    aspect-ratio: 829/457;
+    aspect-ratio: 290/161;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 829/457;
+    }
 }
 
 .profitable__third-img-two{
-    width: 28.5%;
+    width: 100%;
+    @include mq(md){
+        width: 28.5%;
+    }
 }
 
 .profitable__third-img-two img {
-    aspect-ratio: 341/457;
+    aspect-ratio: 290/363;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 341/457;
+    }
 }
 
 
 //force
 .profitable__force{
-    margin-top: rem(30);
+    margin-top: rem(19);
+    @include mq(md){
+        margin-top: rem(30);
+    }
 }
 
 .profitable__force-img{
@@ -161,8 +323,11 @@ margin-left: rem(-50);
 }
 
 .profitable__force-img{
-    aspect-ratio:1200/495 ;
+    aspect-ratio:290/ 121;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md){
+        aspect-ratio:1200/495 ;
+    }
 }
