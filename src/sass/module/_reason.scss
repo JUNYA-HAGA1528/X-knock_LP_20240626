@@ -14,10 +14,10 @@
 .reason_inner{
     max-width: $max-width;
     margin: auto;
-    padding: 0 rem(35);
+    padding: rem(80) rem(35);
     @include mq(md){
         max-width: rem(1336);
-        padding: 0 rem(30);
+        padding: rem(180)  rem(30);
     }
 }
 

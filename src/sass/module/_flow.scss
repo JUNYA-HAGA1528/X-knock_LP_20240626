@@ -14,6 +14,7 @@
     font-size: rem(24);
     color: red;
     text-align: center;
+    font-weight: $normal;
     @include mq(md){
         font-size: rem(48);
     }
@@ -90,6 +91,7 @@
     font-size: rem(16);
     color: red;
     margin-left: rem(20);
+    font-weight: $normal;
     @include mq(md){
         font-size: rem(32);
         margin-left: 0;

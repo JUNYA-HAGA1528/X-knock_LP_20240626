@@ -57,6 +57,7 @@
     padding: rem(10); 
     padding-left: rem(20);
     color: $white;
+    font-weight: $normal;
     @include mq(md){
         font-size: rem(32);
         padding-left: rem(40);

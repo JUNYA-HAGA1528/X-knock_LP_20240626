@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.top-achievements{
-    margin-top: rem(92);
+.top-youtube{
+    margin-top: rem(40);
     @include mq(md){
         margin-top: rem(200);
     }

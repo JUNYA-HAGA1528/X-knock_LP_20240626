@@ -1,8 +1,9 @@
 @use "global" as *;
 
 .top-support{
+    margin-top: rem(-30);
     padding-bottom: rem(80);
     @include mq(md){
-        margin-top: rem(200);
+        margin-top: rem(0);
     }
 }

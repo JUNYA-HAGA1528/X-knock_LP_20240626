@@ -3,6 +3,6 @@
 .top-reason{
     margin-top: rem(28);
     @include mq(md){
-        margin-top: rem(200);
+        margin-top: rem(0);
     }
 }

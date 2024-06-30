@@ -4,7 +4,7 @@
     text-align: center;
     font-size: rem(24);
     color: $gray;
-    font-weight: $medium;
+    font-weight: $normal;
     @include mq(md){
         font-size: rem(30);
     }
@@ -13,7 +13,7 @@
 .section-title__black{
     font-size: rem(24);
     @include mq(md){
-        font-size: rem(48);
+        font-size: rem(60);
     }
 }
 
@@ -21,7 +21,7 @@
     font-size: rem(24);
     color: red;
     @include mq(md){
-        font-size: rem(36);
+        font-size: rem(48);
 
     }
 }
