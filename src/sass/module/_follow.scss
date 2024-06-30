@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.follow{
+    text-align: center;
+    @include mq(md){
+        background-image: url(../images/common/follow-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: rem(200) 0 rem(150);
+    }
+}
+
+.follow__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1157);
+        padding: 0 rem(30);
+    }
+}
+
+.follow__title{
+    font-size: rem(16);
+    font-weight: $normal;
+    color: $gray;
+    @include mq(md){
+        font-size: rem(32);
+    }
+}
+
+.follow__title{
+    font-size: rem(20);
+    @include mq(md){
+        font-size: rem(36);
+    }
+}
+
+.follow__title + .follow__title{
+    margin-top: rem(20);
+}
+
+.follow__red{
+    color: red;
+}
+
+.follow__img{
+    width: 66.2%;
+    margin:rem(40) auto auto auto;
+    @include mq(md){
+        width: 100%;
+        margin:rem(50) auto auto auto;
+    }    
+}

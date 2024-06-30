@@ -1,0 +1,118 @@
+@use "global" as *;
+
+.business{
+    text-align: center;
+}
+
+.business__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
+        max-width: 100%;
+    }
+}
+
+.business__top-img{
+    max-width: rem(1690);
+    margin: auto;
+}
+
+.business__content{
+    background-image: url(../images/common/business-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: rem(925);
+    margin: rem(40) rem(25) auto rem(25);
+    padding: rem(50) rem(30);
+    @include mq(md){
+        padding: rem(50) rem(30);
+        margin: rem(40) auto auto auto;
+    }
+}
+
+.business__title{
+    width: 81.6%;
+    margin: auto;
+}
+
+.business__title img {
+    aspect-ratio: 754/79;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business__under-img{
+    max-width: rem(1204);
+    width: 80%;
+    margin: rem(40) auto auto auto;
+    @include mq(md){
+        width: 100%;
+        margin: rem(60) auto auto auto;
+    }
+}
+
+.business__list{
+    margin-top: rem(40);
+}
+
+.business__item{
+    display: flex;
+    max-width: rem(600);
+    margin: auto;
+}
+
+.business__item + .business__item{
+    margin-top: rem(20);
+}
+
+.business__checkbox {
+    width: rem(15);
+    height: rem(15);
+    background-color: #fff;
+    border: 2px solid #646464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 3.5px;
+    margin-right: rem(20);
+    @include mq(md){
+        width: rem(38);
+        height: rem(38);
+    }
+}
+
+.business__checkbox::before {
+    content: "";
+    position: absolute;
+    border-left: 2px solid #646464; /* チェックマークの色 */
+    border-bottom: 2px solid #646464; /* チェックマークの色 */
+    transform: rotate(-45deg);
+    width: rem(16);
+    height: rem(6);
+    left: rem(0);
+    top: rem(-2);   
+    @include mq(md){
+        width: rem(37);
+        height: rem(15);
+        left: rem(5);
+        top: rem(0);    
+    }
+}
+
+.business__text{
+    color: #646464;
+    font-size: rem(16);
+    width: 95%;
+    text-align: left;
+    @include mq(md){
+        font-size: rem(28);
+    }
+}
+
+.business__text span {
+    background:$grade-third ;
+    color: $white;
+}

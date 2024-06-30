@@ -2,7 +2,10 @@
 
 .contract {
     text-align: center;
-    background: $grade-second;
+    background-image: url(../images/common/business-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: rem(33) 0 rem(45);
 }
 
