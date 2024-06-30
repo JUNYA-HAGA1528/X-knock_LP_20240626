@@ -19,9 +19,6 @@ $base-font-family:"a-otf-ud-shin-go-pr6n", sans-serif;
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  font-family: $base-font-family;
-}
 
 // フォントウェイト
 $regular: 300;
@@ -39,6 +36,8 @@ $black: #000;
 $white: #fff;
 $gray: #666666;
 
+
+
 $grade-first:linear-gradient(
   to bottom, /* 上から下へのグラデーション */
   #EFEEEA 0%, /* 最初の色（上） */
@@ -55,3 +54,10 @@ $grade-second: linear-gradient(to right,
 $grade-third:linear-gradient(to right, #FD4477 0%, #F381A0 100%);
 
 $grade-four:linear-gradient(180deg, #8D99D9 0%, #8BA0C7 100%);
+
+
+
+body {
+  font-family: $base-font-family;
+  color: $gray;
+}

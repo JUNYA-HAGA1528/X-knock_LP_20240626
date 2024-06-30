@@ -1,0 +1,271 @@
+@use "global" as *;
+
+.achievements{
+    text-align: center;
+}
+
+
+.achievements__title{
+    font-size: rem(20);
+    background: $grade-third;
+    font-weight: $normal;
+    color: $white;
+    display: inline-block;
+    padding: rem(7.5) rem(22);
+    @include mq(md){
+        font-size: rem(36);
+        padding: 0 rem(64);
+    }
+}
+
+.achievements__title-ecxia {
+    font-size: rem(24);
+    @include mq(md){
+        font-size: rem(48);
+    }
+}
+
+.achievements__title-franchise {
+    font-size: rem(22);
+    @include mq(md){
+        font-size: rem(40);
+    }
+}
+
+.achievements__subtitle{
+    font-size: rem(16);
+    margin: rem(10);
+    padding-bottom: rem(40);
+    @include mq(md){
+        padding-bottom: rem(71);
+        font-size: rem(32);
+        margin-top: rem(38);
+    }
+}
+
+.achievements__inner{
+    max-width: $max-width;
+    margin:auto;
+    padding: rem(34) 0 rem(65);
+    @include mq(md){
+        max-width: rem(1420);
+        padding: rem(34) 0;
+    }
+}
+
+.achievements__border{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    @include mq(md){
+        width: rem(1080);
+    }
+}
+
+.achievements__wrapper{ 
+    width: 71.8%;
+    margin: auto;
+    @include mq(md){
+        display: flex;
+        width: 100%;
+        max-width: rem(1001);
+        gap: 0 rem(40);
+    }
+}
+
+.achievements__img{
+    @include mq(md){
+        width: 58.8%;
+    }
+}
+
+.achievements__img img{
+    aspect-ratio: 280/185;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 538/359;
+    }
+}
+
+
+.achievements__textbox{
+    @include mq(md){
+        width: 46.2%;
+        text-align: center;
+    }
+}
+
+.achievements__owner{
+    background-image: url(../images/common/achievements-owner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: rem(20);
+    font-weight: $medium;
+    text-align: center;
+    margin-top: rem(20);
+    @include mq(md){
+        font-size: rem(36);
+        margin-top: 0;
+        padding: rem(7.5) 0;
+    }
+}
+
+.achievements__comment{
+    font-size: rem(20);
+    font-weight: $medium;
+    text-align: center;
+    margin-top: rem(16);
+    @include mq(md){
+        font-weight: $bold;
+        font-size: rem(24);
+        margin-top: rem(20);
+    }
+}
+
+.achievements__comment span {
+    font-size: rem(24);
+    @include mq(md){
+        font-size: rem(36);
+    }
+}
+
+.achievements__text{
+    font-size: rem(14);
+    text-align: left;
+    line-height: 2.1;
+    margin-top: rem(20);
+    letter-spacing: 0.05em;
+    color: $gray;
+    @include mq(md){
+        line-height: 1.7;
+        padding: 0 rem(17);
+        font-size: rem(16);
+        margin-top: rem(68);
+    }
+}
+
+
+
+
+
+.achievements__content{
+    display: flex;
+    @include mq(md){
+        padding-left: rem(38);
+    }
+}
+
+.achievements__content + .achievements__content{
+    margin-top: rem(5);
+}
+
+.achievements__dt{
+    display: inline-block;
+    font-weight: $medium;
+    font-size: rem(16);
+    padding: rem(1.5) 0;
+    @include mq(md){
+        padding: 0;
+        font-size: rem(24);
+    }
+}
+
+.achievements__dd{
+    font-size: rem(16);
+    font-weight: 500;
+    text-align: center;
+    @include mq(md){
+        text-align: left;
+        font-size: rem(24);
+    }
+}
+
+.achievements__dd span{
+    color: #EF2622;
+}
+
+
+
+
+
+
+
+
+
+
+
+.achievements__under{
+    @include mq(md){
+        margin-top: rem(-88);
+    }
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+    width: rem(100);
+    height: rem(100);
+    top: var(--swiper-navigation-top-offset,45%);
+}
+@media screen and (max-width: 1200px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: rem(50);
+        height: rem(50);
+    }
+}
+@media screen and (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: rem(30);
+        height: rem(30);
+    }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	opacity: 0.5;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  width: rem(100);
+  height: rem(100);
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        width: rem(50);
+        height: rem(50);
+    }
+}
+@media screen and (max-width: 768px) {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        width: rem(30);
+        height: rem(30);
+    }
+}
+
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../images/common/review-botton-left.png);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../images/common/review-botton-right.png);
+}
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}

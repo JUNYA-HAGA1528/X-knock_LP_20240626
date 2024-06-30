@@ -110,6 +110,9 @@ jQuery(function ($) {
         disableOnInteraction: false, // ユーザーの操作後も自動再生を続ける
     },
 });
+
+
+
   
 });
 // 消さない
