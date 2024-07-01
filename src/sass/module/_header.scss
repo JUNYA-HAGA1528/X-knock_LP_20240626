@@ -2,8 +2,6 @@
 
 .header__all{
     background-color: #E7E7E7;
-    position: relative;
-    z-index: 2;
 }
 
 .header-pc{
@@ -12,7 +10,7 @@
 
 .header-pc__bg{
     background-image: url(../images/common/header-bg.png);
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: rem(100);
