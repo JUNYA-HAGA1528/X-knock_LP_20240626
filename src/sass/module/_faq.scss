@@ -161,6 +161,7 @@
 	transition: 0.2s background-color;
     @include mq(md){
         width: rem(26);
+        right: rem(-24);
         height: rem(26);
     }
 }
