@@ -1,14 +1,25 @@
 @use "global" as *;
 
+.header__all{
+    background-color: #E7E7E7;
+}
+
 .header-pc{
-    background-image: url(../images/common/mv-pc-bg.png);
+    height:rem(114) ;
+}
+
+.header-pc__bg{
+    background-image: url(../images/common/header-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: rem(100);
 }
 
 .header-pc__inner{
     max-width: rem(1728);
+    height:rem(114) ;
+
     margin: auto;
     padding: rem(25) rem(88) rem(25) rem(94);
     display: flex;
