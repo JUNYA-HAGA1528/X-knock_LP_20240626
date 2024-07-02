@@ -20,7 +20,7 @@
 
 .contract__title{
     font-size: rem(24);
-    background: $grade-third;
+    background: $grade-third; /* テキストにグラデーションを設定 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -68,32 +68,32 @@
     }
 }
 
-.contract__dd{
+.contract__dd {
     font-size: rem(20);
     letter-spacing: 0.05em;
     font-weight: 500;
     text-align: center;
-    background-color: $white;
-    padding: rem(5) 0 ;
-    background: $grade-third;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    background-color: $white; /* 親要素に白い背景を設定 */
+    padding: rem(5) 0;
     width: 79%;
-    margin:rem(20) auto auto auto;
-    @include mq(md){
+    margin: rem(20) auto auto auto;
+    @include mq(md) {
         text-align: left;
-        margin:0;
+        margin: 0;
         padding: 0 rem(10) 0 rem(54);
         font-size: rem(32);
         width: 62.8%;
     }
 }
 
-.contract__dd span{
-    color: #EF2622;
+.contract__dd-text {
+    background: $grade-third; /* テキストにグラデーションを設定 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
+
 
 .contract__button {
     margin-top: rem(25);

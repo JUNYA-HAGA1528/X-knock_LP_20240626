@@ -126,6 +126,7 @@
     background-color: #F5F5F5;
     margin-top: rem(20);
     @include mq(md){
+        gap: 50px;
         margin-top: 0;
         width: 100%; 
     }

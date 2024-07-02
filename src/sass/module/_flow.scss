@@ -18,9 +18,10 @@
     background-clip: text;
     text-fill-color: transparent;
     text-align: center;
-    font-weight: $normal;
+    font-weight: $bold;
     @include mq(md){
         font-size: rem(48);
+        font-weight: $normal;
     }
 }
 
@@ -51,8 +52,8 @@
     color: $gray;
     margin-top: rem(19.2);
     @include mq(md){
-        font-size: rem(30);
-        margin-top: rem(35);
+        font-size: rem(36);
+        margin-top: rem(28);
     }
 }
 
@@ -66,12 +67,12 @@
     background: #666666;
     color: $white;
     font-size: rem(16);
-    font-weight: $bold;
+    font-weight: $normal;
     margin-top: rem(10);
     padding-top: rem(8);
     border-radius: 50%;
     @include mq(md){
-        left: rem(82);
+        left: rem(95);
         width: rem(100);
         height: rem(100);
         padding-top: rem(10);
@@ -99,10 +100,11 @@
     background-clip: text;
     text-fill-color: transparent;
     margin-left: rem(20);
-    font-weight: $normal;
+    font-weight: $bold;
     @include mq(md){
         font-size: rem(32);
         margin-left: 0;
+        font-weight: $normal;
     }
 }
 

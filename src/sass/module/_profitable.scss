@@ -79,7 +79,7 @@
     padding: 0 rem(65) 0 rem(35);
     @include mq(md){
         max-width: rem(1290);
-        padding: 0 4.4% 0 rem(10);
+        padding: 0 2.5% 0 rem(10);
     }
 }
 
@@ -196,19 +196,22 @@
     font-size: rem(24);
     color: $white;
     @include mq(md){
-        font-size: rem(32);
+        font-size: rem(36);
     }
 }
 
 .profitable__first-text-two{
-    font-size: rem(14);
+    font-size: rem(12);
+    @include mq(md){
+        font-size: rem(14);
+    }
 }
 
 .profitable__first-white{
-    font-size: rem(16);
+    font-size: rem(24);
     color: $white;
     @include mq(md){
-        font-size: rem(32);
+        font-size: rem(36);
     }
 }
 
@@ -228,7 +231,7 @@
     font-size: rem(16);
     color: $gray;
     @include mq(md){
-        font-size: rem(18);
+        font-size: rem(24);
     }
 }
 
