@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
+
     <!-- meta情報 -->
     <title>ecxia</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    
     <!-- ogp -->
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
@@ -16,8 +18,10 @@
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
+    
     <!-- ファビコン -->
     <link rel="”icon”" href="" />
+    
     <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
@@ -46,7 +50,6 @@
     <!----------
    ヘッダー+メインビュー(pc)
     ---------->
-
     <header class="header-all u-desktop">
         <div class="header-pc ">
             <div class="header-pc__bg">
@@ -779,7 +782,7 @@
                         <img src="./assets/images/common/support1.jpg" alt="海中にある珊瑚">
                     </div>
                     <div class="support-card__content">
-                        <h3 class="support-card__title">研修マニュアル</h3>
+                        <h3 class="support-card__title" data-text="研修マニュアル">研修マニュアル</h3>
                         <p class="support-card__text">
                             これまでの実績とノウハウをマニュアルに集約。新しいメンバーが研修を担当できるよう、わかりやすいテキストをお渡しします。
                         </p>
@@ -790,7 +793,7 @@
                         <img src="./assets/images/common/support2.jpg" alt="海中にある珊瑚">
                     </div>
                     <div class="support-card__content">
-                        <h3 class="support-card__title">研修セミナー</h3>
+                        <h3 class="support-card__title" data-text="研修セミナー">研修セミナー</h3>
                         <p class="support-card__text">
                             基本的な力を確実に育成するため、経験やノウハウに応じて学べます。<br>経営や企画立案、クレームへの対応方法など様々なノウハウを研修します。
                         </p>
@@ -801,7 +804,7 @@
                         <img src="./assets/images/common/support3.jpg" alt="海中にある珊瑚">
                     </div>
                     <div class="support-card__content">
-                        <h3 class="support-card__title">コンサルティング</h3>
+                        <h3 class="support-card__title" data-text="コンサルティング">コンサルティング</h3>
                         <p class="support-card__text">
                             オーナーと本部は、共通の理念と目標を掲げ対等なパートナーシップを確立した関係を築きます。事業を営む上で経営やマネジメントのサポート体制も万全です。
                         </p>
@@ -1194,7 +1197,74 @@
     <!----------
     コンタクトフォーム
     ---------->
+    <div class="top-contact contact">
+        <div class="contact__inner">
+
+
+            <div class="contact__form form">
+                <form action="" method="post" id="">
+                    <dl class="form__item form__item--padding">
+                        <dt>お問い合わせ種別（必須）</dt>
+                        <dd class="tab-parts__flex">
+                            <input type="radio" id="option1" name="contact-type" value="fc" checked>
+                            <label for="option1" class="tab-parts__tab">FC加盟に関して</label>
+                    
+                            <input type="radio" id="option2" name="contact-type" value="inquiry">
+                            <label for="option2" class="tab-parts__tab">お問い合わせ</label>
+                    
+                            <input type="radio" id="option3" name="contact-type" value="interview">
+                            <label for="option3" class="tab-parts__tab">取材に関して</label>
+                    
+                            <input type="radio" id="option4" name="contact-type" value="others">
+                            <label for="option4" class="tab-parts__tab">その他</label>
+                        </dd>
+                    </dl>
+                    <dl class="form__item form__item--padding">
+                        <dt>会社名（任意）</dt>
+                        <dd>
+                            <input type="text" name="company" value="" />
+                        </dd>
+                    </dl>
+                    <dl class="form__item form__item--padding">
+                        <dt>氏名（必須）</dt>
+                        <dd>
+                            <input type="text" name="name" value="" />
+                        </dd>
+                    </dl>
+                    <dl class="form__item form__item--padding">
+                        <dt>フリガナ（必須）</dt>
+                        <dd>
+                            <input type="text" name="furigana" value="" />
+                        </dd>
+                    </dl>
+                    <dl class="form__item form__item--padding">
+                        <dt>電話番号（必須）</dt>
+                        <dd>
+                            <input type="text" name="tel" value="" />
+                        </dd>
+                    </dl>
+
+                    <dl class="form__item form__item--padding">
+                        <dt>メールアドレス（必須）</dt>
+                        <dd>
+                            <input type="email" name="mail_address" value="" class="validate[]" />
+                        </dd>
+                    </dl>
+                    <dl class="form__item">
+                        <dt>お問い合わせ内容（必須）</dt>
+                        <dd>
+                            <textarea name="contents"></textarea>
+                        </dd>
+                    </dl>
+                    <div class="form__contact">
+                        <button class="form__contact-button"><span>送信</span></button>
+                    </div>          
     
+                </form>
+            </div>
+
+        </div>
+    </div>
 
 
 

@@ -67,7 +67,18 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.4s;
-    border-top: solid 1px red ;
+    position: relative; /* 疑似要素のために相対位置を設定 */
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px; /* ボーダーの高さ */
+        background: $grade-third;
+        display: block;
+    }
 }
 
 .open .accordion__text {
