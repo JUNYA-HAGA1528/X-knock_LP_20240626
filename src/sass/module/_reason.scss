@@ -44,7 +44,11 @@
 }
 
 .reason__number {
-    color: red; 
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     margin-top: rem(3.5);
     font-size: rem(16);
     @include mq(md) {
@@ -65,8 +69,12 @@
 }
 
 .reason__answer span {
-    color: red;
-    font-weight: $medium;
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: $normal;
 }
 
 .reason__item{

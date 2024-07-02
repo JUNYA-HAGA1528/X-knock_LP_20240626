@@ -18,6 +18,8 @@
     padding: 0 rem(25) 0 rem(30);
 }
 
+
+
 .footer__line{
     @include mq(md){
         display: flex;
@@ -27,6 +29,7 @@
         padding: 0 rem(48) rem(61) rem(10);
     }
 }
+
 
 .footer__logo {
     width:rem(107) ;
@@ -65,6 +68,23 @@
     height: inherit;
 	display: flex;
     align-items: center;
+    position: relative;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.footer__item a::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: rem(-4);
+	width: 0;
+	height: rem(2);
+	background: $grade-third;
+	transition: 0.3s;
+}
+.footer__item a:hover::before{
+	width: 100%;
 }
 
 
@@ -165,8 +185,4 @@
 
 
 
-a:hover {
-    @include mq(md){
-        opacity: 0.5;
-    }
-}
+

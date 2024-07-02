@@ -31,7 +31,11 @@
 }
 
 .accordion__top {
-    color: red; 
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     font-size: rem(16);
     @include mq(md){
         font-size: rem(36);
@@ -113,7 +117,7 @@
 }
 
 .accordion__icon span {
-    background-color: red;
+    background: $grade-third;
     border-radius: 0.1875rem;
     display: inline-block;
     height: 1px;

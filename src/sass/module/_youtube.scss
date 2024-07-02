@@ -83,7 +83,6 @@
     transition: color 0.2s;
     z-index: 1;
     border-radius: rem(45);
-    cursor: pointer;
     @include mq(md){
         margin-top: rem(5);
         font-size: rem(48); 

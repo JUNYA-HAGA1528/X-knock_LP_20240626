@@ -19,7 +19,11 @@
 
 .section-title__red{
     font-size: rem(24);
-    color: red;
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     @include mq(md){
         font-size: rem(48);
 

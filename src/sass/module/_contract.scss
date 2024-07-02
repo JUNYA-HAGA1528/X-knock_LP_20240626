@@ -20,7 +20,11 @@
 
 .contract__title{
     font-size: rem(24);
-    color: red;
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     @include mq(md){
         font-size: rem(36);
     }
@@ -71,7 +75,11 @@
     text-align: center;
     background-color: $white;
     padding: rem(5) 0 ;
-    color: red;
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     width: 79%;
     margin:rem(20) auto auto auto;
     @include mq(md){

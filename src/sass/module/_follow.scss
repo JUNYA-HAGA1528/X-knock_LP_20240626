@@ -46,7 +46,11 @@
 
 
 .follow__red{
-    color: red;
+    background: $grade-third;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .follow__img{
