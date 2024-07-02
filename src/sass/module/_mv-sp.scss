@@ -1,6 +1,11 @@
 @use "global" as *;
 
 
+
+.mv-sp{
+    background-color: #E7E7E7;
+}
+
 .mv-sp__inner{
     max-width: rem(550);
     margin:rem(-80) auto auto auto;
@@ -11,6 +16,8 @@
     font-size: rem(24);
     padding: 0 rem(35);
     margin-top: rem(6);
+    position: relative;
+    z-index: 9;
 }
 
 .mv-sp__img{
@@ -24,7 +31,7 @@
     margin:rem(-220) auto auto auto;
     padding: 0 7.5%;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .mv-sp__stores{
@@ -54,6 +61,8 @@
 .mv-sp__buttons{
     width: rem(320);
     margin-top: rem(12);
+    position: relative;
+    z-index: 3;
 }
 
 .mv-sp__text {

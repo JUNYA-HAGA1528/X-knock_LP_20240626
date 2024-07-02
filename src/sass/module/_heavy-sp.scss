@@ -6,16 +6,20 @@
 
 .heavy-sp{
     background-image: url(../images/common/test.png);
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
-        background-size: cover;
-    padding: rem(200) 0;
+    background-size: cover;
+    background-color: transparent;
+    padding: rem(80) 0 rem(120);
+    position: relative;
+    z-index: 2;
+    margin-top: rem(-140);
 }
 
 .heavy-sp__inner{
     max-width: rem(550);
     margin: auto;
-    padding: 0 rem(35) 0 rem(25);
+    padding: rem(110) rem(35) 0 rem(25);
 }
 
 .heavy-sp__left-head {
@@ -60,4 +64,15 @@
 
 .heavy-sp__left-under{
     margin-top: rem(20);
+}
+
+
+
+.vv{
+    background-image: url(../images/common/aaa.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    height: 100%;
 }

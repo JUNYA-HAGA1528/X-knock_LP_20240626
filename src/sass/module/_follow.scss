@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .follow{
-    text-align: center;
+    background-image: url(../images/common/follow-sp-top.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: rem(30);
     @include mq(md){
         background-image: url(../images/common/follow-bg.png);
         background-position: center top;
@@ -14,7 +18,7 @@
 .follow__inner{
     max-width: $max-width;
     margin: auto;
-    padding: 0 rem(25);
+    padding: rem(150) rem(25) rem(100);
     @include mq(md){
         max-width: rem(1157);
         padding: 0 rem(30);
@@ -22,24 +26,24 @@
 }
 
 .follow__title{
-    font-size: rem(16);
+    font-size: rem(20);
     font-weight: $normal;
     color: $gray;
+    text-align: center;
     @include mq(md){
         font-size: rem(32);
     }
 }
 
-.follow__title{
-    font-size: rem(20);
+.follow__title-second{
+    font-size: rem(16);
+    text-align: center;
+    margin-top: rem(20);
     @include mq(md){
-        font-size: rem(36);
+        font-size: rem(32);
     }
 }
 
-.follow__title + .follow__title{
-    margin-top: rem(20);
-}
 
 .follow__red{
     color: red;

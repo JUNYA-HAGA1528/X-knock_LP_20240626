@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .header-sp{
-    background-color: #E7E7E7;
+    
 }
 
 
@@ -11,6 +11,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: rem(100);
+    position: relative;
+    z-index: 3;
+    background-color: #E7E7E7;;
 }
 
 .header-sp__inner{
@@ -25,6 +28,8 @@
 .header-sp__logo{
     width: rem(89);
     height: rem(18);
+    position: relative;
+    z-index: 1;
 }
 
 
