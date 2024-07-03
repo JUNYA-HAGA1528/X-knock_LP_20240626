@@ -28,11 +28,7 @@
     }
 }
 
-.form__item--padding dt {
-    @include mq(md){
-        padding-top: rem(10);
-    }
-}
+
 
 .form__item input,
 .form__item textarea{
@@ -204,11 +200,3 @@ input[type="radio"]:checked + .tab-parts__tab {
     background-color: #EBEBEB;
 }
 
-/* レスポンシブデザイン */
-@media (min-width: 768px) {
-
-
-    .tab-parts__tab {
-        flex: 1;
-    }
-}
