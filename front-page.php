@@ -22,6 +22,7 @@
             </div>
         </div>
     
+    
         <div class="header-pc__mv mv-pc ">
             <div class="mv-pc__content">
                 <div class="mv-pc__img">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="mx-pc__buttons">
                         <p class="mx-pc__text">\女性オーナー活躍中/</p>
-                        <a href="#contact" class="mx-pc__button"><span>いますぐ資料請求する</span></a>
+                        <a href="" class="mx-pc__button"><span>いますぐ資料請求する</span></a>
                     </div>
                 </div>
             </div>
@@ -117,7 +118,7 @@
                     </div>
                     <div class="mv-sp__buttons">
                         <p class="mv-sp__text">\女性オーナー活躍中/</p>
-                        <a href="#contact" class="mv-sp__button"><span>いますぐ資料請求する</span></a>
+                        <a href="#contact" class="mx-sp__button"><span>いますぐ資料請求する</span></a>
                     </div>
                 </div>
             </div>
@@ -225,6 +226,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 
@@ -600,7 +603,9 @@
                     </div>
     
                     <div class="whitening-under__store">
-                        <a href="https://ecxia-inc.com/shop/" class="whitening-under__button"><span>店舗一覧を見る</span></a>
+                        <a href="https://ecxia-inc.com/shop/" class="whitening-under__button">
+                            <span>店舗一覧を見る</span>
+                        </a>
                     </div>          
                 </div>
             </div>
@@ -1137,8 +1142,8 @@
 
             <div class="faq__button">
                 <div class="faq__button-flex">
-                    <a href="#contact" class="faq__button-left"><span>いますぐ資料請求する</span></a>
-                    <a href="https://ecxia-inc.com/" class="faq__button-right"><span>コーポレートサイトはこちら</span></a>
+                    <a href="#contact" class="faq-under__button-left"><span>いますぐ資料請求する</span></a>
+                    <a href="#contact" class="faq-under__button-right"><span>コーポレートサイトはこちら</span></a>
                 </div>
             </div>
 

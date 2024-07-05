@@ -39,7 +39,9 @@
             <div class="footer__bottom">
                 <p class="footer__company"><span class="footer__company-span">ecxia</span>&nbsp;株式会社</p>
                 <div class="footer__button">
-                    <a href="https://ecxia-inc.com/" class="footer__button-text"><span>コーポレートサイトへ</span></a>
+                    <!-- <a href="https://ecxia-inc.com/" class="footer__button-text"><span>コーポレートサイトへ</span></a> -->
+                    <a href="https://ecxia-inc.com/" class="footer__button-btn"><span>コーポレートサイトへ</span></a>
+
                 </div>
             </div>
         </div>
