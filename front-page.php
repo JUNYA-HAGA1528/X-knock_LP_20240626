@@ -42,7 +42,7 @@
                     </div>
                     <div class="mx-pc__buttons">
                         <p class="mx-pc__text">\女性オーナー活躍中/</p>
-                        <a href="" class="mx-pc__button"><span>いますぐ資料請求する</span></a>
+                        <a href="#contact" class="mx-pc__button"><span>いますぐ資料請求する</span></a>
                     </div>
                 </div>
             </div>
@@ -249,17 +249,17 @@
                     <div class="swiper-slide">
                         <div class="achievements__wrapper">
                             <div class="achievements__img">
-                                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/achievements-staff.jpg" alt="女性スタッフ">
+                                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review1.png" alt="男性オーナー">
                             </div>
 
                             <div class="achievements__textbox">
-                                <h3 class="achievements__owner">〇〇店</h3>
-                                <p class="achievements__comment">オーナーの月間収益<br><span>〇〇万円</span></p>
+                                <h3 class="achievements__owner">代々木店</h3>
+                                <p class="achievements__comment">オーナーの月間収益<br><span>350万</span></p>
                                 <p class="achievements__text">
                                     <div class="achievements__detail">
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>店舗エリア：</dt>
+                                                <dt>店舗エリア：東京都</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -267,7 +267,7 @@
                                         </dl>
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>月間売上：</dt>
+                                                <dt>月間売上：550万</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -275,7 +275,7 @@
                                         </dl>
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>月間新規数：</dt>
+                                                <dt>月間新規数：40人獲得</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -290,17 +290,17 @@
                     <div class="swiper-slide">
                         <div class="achievements__wrapper">
                             <div class="achievements__img">
-                                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/achievements-staff.jpg" alt="女性スタッフ">
+                                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review2.jpg" alt="女性オーナー">
                             </div>
 
                             <div class="achievements__textbox">
-                                <h3 class="achievements__owner">〇〇店</h3>
-                                <p class="achievements__comment">オーナーの月間収益<br><span>〇〇万円</span></p>
+                                <h3 class="achievements__owner">南池袋店、恵比寿東口店</h3>
+                                <p class="achievements__comment">オーナーの月間収益<br><span>250万</span></p>
                                 <p class="achievements__text">
                                     <div class="achievements__detail">
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>店舗エリア：</dt>
+                                                <dt>店舗エリア：東京都</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -308,7 +308,7 @@
                                         </dl>
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>月間売上：</dt>
+                                                <dt>月間売上：450万</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -316,7 +316,7 @@
                                         </dl>
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>月間新規数：</dt>
+                                                <dt>月間新規数：40人獲得</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -331,17 +331,17 @@
                     <div class="swiper-slide">
                         <div class="achievements__wrapper">
                             <div class="achievements__img">
-                                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/achievements-staff.jpg" alt="女性スタッフ">
+                                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review3.jpg" alt="男性オーナー">
                             </div>
 
                             <div class="achievements__textbox">
-                                <h3 class="achievements__owner">〇〇店</h3>
-                                <p class="achievements__comment">オーナーの月間収益<br><span>〇〇万円</span></p>
+                                <h3 class="achievements__owner">新潟店</h3>
+                                <p class="achievements__comment">オーナーの月間収益<br><span>100万</span></p>
                                 <p class="achievements__text">
                                     <div class="achievements__detail">
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>店舗エリア：</dt>
+                                                <dt>店舗エリア：新潟県</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -349,7 +349,7 @@
                                         </dl>
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>月間売上：</dt>
+                                                <dt>月間売上：200万</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -357,7 +357,7 @@
                                         </dl>
                                         <dl class="achievements__content">
                                             <div class="achievements__dt">
-                                                <dt>月間新規数：</dt>
+                                                <dt>月間新規数：30人獲得</dt>
                                             </div>
                                             <div class="achievements__dd">
                                                 <dd></dd>
@@ -790,7 +790,7 @@
 
 
     <!----------
-    タイトル（繰り返しパーツ）
+    オーナーレビュー
     ---------->
     <section class="top-review review">
         <div class="review__head">
@@ -808,36 +808,37 @@
                         <div class="review__wrapper">
                             <div class="review__img">
                                 <picture>
-                                    <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review-human.jpg" media="(min-width: 768px)">
-                                    <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review-human-sp.jpg" alt="男性オーナー">
+                                    <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review1.png" media="(min-width: 768px)">
+                                    <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review1.png" alt="男性オーナー">
                                 </picture>
                             </div>
                             <div class="review__textbox">
-                                <h3 class="review__owner">新潟店&nbsp;オーナー</h3>
-                                <p class="review__comment">2ヶ月目には黒字化し、<br>たくさんの方々を笑顔にしました！</p>
+                                <h3 class="review__owner">代々木店&nbsp;オーナー</h3>
+                                <p class="review__comment">エクシアの仕組みと掛け合わせて、<br>事業を拡大！</p>
                                 <p class="review__text">
-                                    2022年1月に新潟駅近くでオープンさせて頂いた新潟店です。<br>
-                                    首都圏とは違い地方都市でのオープンで不安もありましたが、実際にオープンしてみると瞬く間に話題を呼び大人気店になる事ができました。2ヶ月目には黒字化し、たくさんの方々の笑顔を毎日見る事ができて”エクシア”でホワイトニングサロンをオープンして本当に良かったです！！地方でも今後はホワイトニングの需要はかなりあると感じており、2店舗目3店舗目も視野に入ってきました。<br>
-                                    コロナ禍後の社会で間違いなく口元に視線がいく中、マスク生活の今のうちに歯を綺麗にしておきたい方がかなり多いと感じております。
+                                    結論から言うとFCをやってみて本当に良かったです。<br>
+                                    本店に見学した時、渋谷店店長も大変人柄の良い方で、エクシアのFCをやりたいと思い決断しました。やってみて確信しました。この商品はとんでもなく良いと。価格だけでなく、能力も日本一ではないかと思いました。自分の事業ともうまく組み合わせてオープンして1ケ月で50人近くのかたに会員になって頂き順調な滑り出しです。<br>
+                                    最初、お試しで来たあまり乗り気でないお客様も満足して笑顔でご契約いただき、これもエクシアの商品力だなと実感しております。<br>
+                                    エクシアの仕組みがもともとあるのであとは、自分の事業と組み合わせれば上手くいくかと思います。本当にFCオーナーになって良かったと改めて思います。この調子で2号店、3号店を出してエクシア拡大に向けて尽力して行きたいと思っております。
                                 </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="review__wrapper">
                             <div class="review__img">
                                 <picture>
-                                    <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review-human.jpg" media="(min-width: 768px)">
-                                    <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review-human-sp.jpg" alt="男性オーナー">
+                                    <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review2.jpg" media="(min-width: 768px)">
+                                    <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/review2.jpg" alt="女性オーナー">
                                 </picture>
                             </div>
                             <div class="review__textbox">
-                                <h3 class="review__owner">新潟店&nbsp;オーナー</h3>
-                                <p class="review__comment">2ヶ月目には黒字化し、<br>たくさんの方々を笑顔にしました！</p>
+                                <h3 class="review__owner">南池袋店&nbsp;オーナー</h3>
+                                <p class="review__comment">サポートが充実していて、<br>安心して始められる</p>
                                 <p class="review__text">
-                                    2022年1月に新潟駅近くでオープンさせて頂いた新潟店です。<br>
-                                    首都圏とは違い地方都市でのオープンで不安もありましたが、実際にオープンしてみると瞬く間に話題を呼び大人気店になる事ができました。2ヶ月目には黒字化し、たくさんの方々の笑顔を毎日見る事ができて”エクシア”でホワイトニングサロンをオープンして本当に良かったです！！地方でも今後はホワイトニングの需要はかなりあると感じており、2店舗目3店舗目も視野に入ってきました。<br>
-                                    コロナ禍後の社会で間違いなく口元に視線がいく中、マスク生活の今のうちに歯を綺麗にしておきたい方がかなり多いと感じております。
+                                    FC事業は初めてなのですが、ecxiaのサポートは手厚く、必要な備品や準備物のリストなど、スタートの段階で欲しい情報が予め用意されています。<br>
+                                    また、教育面にも力を入れており、具体的なトークスクリプトやマニュアルの用意、ロープレなどの実践的指導など、初めて店舗を持つ方でも不安が少なく始められるのかなと思います。また、私自身元々ecxiaのお客の立場でホワイトニングのクオリティの高さを実感していましたので、実際に店舗側になった今でも、その点はとてもオススメし易くありがたいです。
                                 </p>
                             </div>
                         </div>
@@ -1143,7 +1144,7 @@
             <div class="faq__button">
                 <div class="faq__button-flex">
                     <a href="#contact" class="faq-under__button-left"><span>いますぐ資料請求する</span></a>
-                    <a href="#contact" class="faq-under__button-right"><span>コーポレートサイトはこちら</span></a>
+                    <a href="https://ecxia-inc.com/" class="faq-under__button-right"><span>コーポレートサイトはこちら</span></a>
                 </div>
             </div>
 
